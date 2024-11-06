@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+#reservation-form label, #reservation-form input, #reservation-form select, #reservation-form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#reservation-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#reservation-form button:hover {
+    background-color: #0056b3;
+}
+
+#reservation-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#reservation-list th, #reservation-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#reservation-list th {
+    background-color: #f2f2f2;
+    text-align: left;
+}

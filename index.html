@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>涉密电脑预约系统</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <h1>涉密电脑预约系统</h1>
+    <div id="reservation-form">
+        <label for="computer">电脑编号 (1-9):</label>
+        <select id="computer" required>
+            <option value="">请选择</option>
+            <option value="1(广联达)">1(广联达)</option>
+            <option value="2(广联达)">2(广联达)</option>
+            <option value="3(广联达)">3(广联达)</option>
+            <option value="4(广联达)">4(广联达)</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <label for="date">使用日期:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">使用时间:</label>
+        <select id="time" required>
+            <option value="">请选择</option>
+            <option value="morning">上午</option>
+            <option value="afternoon">下午</option>
+            <option value="full-day">全天</option>
+        </select>
+
+        <label for="project">项目编号:</label>
+        <input type="text" id="project" required>
+
+        <label for="user">评审人员:</label>
+        <input type="text" id="user" required>
+
+        <label for="supervisor">项目主管人员:</label>
+        <input type="text" id="supervisor" required>
+
+        <button onclick="reserve()">预约</button>
+    </div>
+
+    <div id="reservation-list">
+        <h2>预约记录</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>电脑编号</th>
+                    <th>使用日期</th>
+                    <th>使用时间</th>
+                    <th>项目编号</th>
+                    <th>评审人员</th>
+                    <th>项目主管人员</th>
+                </tr>
+            </thead>
+            <tbody id="reservations">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
